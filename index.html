@@ -1,14 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chuyện Hai Đứa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyện Hai Đứa - Studio chụp ảnh cưới</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header class="header" id="home">
+    <a class="logo" href="#home">
+      <span class="logo-name">CHUYỆN HAI ĐỨA</span>
+      <span class="logo-subtitle">STUDIO CHỤP ẢNH CƯỚI</span>
+    </a>
 
+    <input class="menu-checkbox" type="checkbox" id="menu-toggle">
+    <label class="menu-button" for="menu-toggle">☰</label>
+
+    <nav class="desktop-menu">
+      <a href="#home">Trang chủ</a>
+      <a href="#pricing">Bảng giá</a>
+      <a href="#story">Về chúng tôi</a>
+      <a href="#albums">Bộ sưu tập</a>
+      <a href="#process">Quy trình</a>
+    </nav>
+
+    <a class="button header-button" href="#contact">Đặt lịch</a>
+
+    <nav class="mobile-menu">
+      <a href="#home">Trang chủ</a>
+      <a href="#pricing">Bảng giá</a>
+      <a href="#story">Về chúng tôi</a>
+      <a href="#albums">Bộ sưu tập</a>
+      <a href="#process">Quy trình</a>
+      <a href="#contact">Đặt lịch tư vấn</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="small-title">WEDDING STUDIO - NATURAL &amp; TIMELESS</p>
+        <h1>Ngày mình cưới,<br>đẹp như một thước phim xưa</h1>
+        <p class="hero-description">Ảnh cưới ngoài trời, màu dịu và cảm xúc thật — lưu giữ câu chuyện của riêng hai bạn.
+        </p>
+        <div class="hero-buttons">
+          <a class="button" href="#contact">Nhận tư vấn miễn phí</a>
+          <a class="button button-white" href="#pricing">Xem bảng giá</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-placeholder">
+      <p>Vị trí ghép nội dung của các thành viên khác</p>
+    </div>
+  </main>
+
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <div class="contact-information">
+        <p class="small-title">LET'S MAKE MEMORIES</p>
+        <h2>Sẵn sàng kể câu chuyện của bạn?</h2>
+        <p>Hãy chia sẻ đôi điều về ngày đặc biệt của hai bạn. Chúng mình sẽ liên hệ để tư vấn concept và gói chụp phù
+          hợp.</p>
+
+        <div class="contact-details">
+          <p><strong>ĐIỆN THOẠI / ZALO</strong><br><a href="tel:0899067427">0899 067 427</a></p>
+          <p><strong>ĐỊA CHỈ STUDIO</strong><br>12 Nguyễn Văn Bảo, phường Hạnh Thông, TP. HCM</p>
+          <p><strong>GIỜ LÀM VIỆC</strong><br>8:00 - 20:00, mỗi ngày</p>
+        </div>
+      </div>
+
+      <form class="contact-form" action="#contact" method="get">
+        <p class="form-subtitle">LET'S TALK</p>
+        <h3>Đăng ký tư vấn</h3>
+
+        <div class="form-field">
+          <label for="name">Họ và tên *</label>
+          <input type="text" id="name" name="name" placeholder="Tên của hai bạn" required>
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Số điện thoại *</label>
+          <input type="tel" id="phone" name="phone" placeholder="Số điện thoại liên hệ" required>
+        </div>
+
+        <div class="form-field">
+          <label for="date">Ngày cưới dự kiến</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div class="form-field">
+          <label for="package">Gói chụp quan tâm</label>
+          <select id="package" name="package">
+            <option value="">Chọn gói chụp</option>
+            <option>Nắng Mai</option>
+            <option>Lá Vàng</option>
+            <option>Hoàng Hôn</option>
+            <option>Bốn Mùa</option>
+            <option>Chưa biết, cần tư vấn</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Nhu cầu của bạn</label>
+          <textarea id="message" name="message" rows="4" placeholder="Chia sẻ mong muốn của hai bạn"></textarea>
+        </div>
+
+        <button class="button submit-button" type="submit">Gửi yêu cầu tư vấn</button>
+        <p class="form-note">Thông tin của bạn chỉ được dùng để liên hệ tư vấn.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="#home">
+          <span class="logo-name">CHUYỆN HAI ĐỨA</span>
+          <span class="logo-subtitle">STUDIO CHỤP ẢNH CƯỚI</span>
+        </a>
+        <p>Ghi lại những khoảnh khắc dịu dàng theo cách tự nhiên nhất.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>ĐIỀU HƯỚNG</h3>
+        <a href="#home">Trang chủ</a>
+        <a href="#pricing">Bảng giá</a>
+        <a href="#story">Về chúng tôi</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>KHÁM PHÁ</h3>
+        <a href="#albums">Bộ sưu tập</a>
+        <a href="#process">Quy trình</a>
+        <a href="#contact">Tư vấn</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>KẾT NỐI</h3>
+        <a href="tel:0899067427">Zalo: 0899 067 427</a>
+        <a href="#contact">Facebook</a>
+        <a href="#contact">Instagram</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Chuyện Hai Đứa</p>
+      <p>Được tạo nên bằng sự dịu dàng và chân thành.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
