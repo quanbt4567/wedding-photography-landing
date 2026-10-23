@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #3f4036;
+    background: #fdfcf9;
+    font-family: Georgia, serif;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+.packages-section {
+    width: 90%;
+    max-width: 1120px;
+    margin: auto;
+    padding: 28px 0 42px;
+}
+
+.packages-heading,
+.process-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.small-title {
+    margin-bottom: 8px;
+    color: #747b58;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.description {
+    max-width: 530px;
+    margin-bottom: 0;
+    color: #77776d;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.outline-button {
+    display: inline-block;
+    height: 30px;
+    padding: 8px 25px;
+    border: 1px solid #a1a58c;
+    border-radius: 20px;
+    color: #3f4036;
+    background: transparent;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.package-list,
+.steps-list,
+.commitment-list {
+    display: grid;
+    gap: 18px;
+}
+
+.package-list,
+.steps-list {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.package-card,
+.step-card,
+.commitment-card {
+    overflow: hidden;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px #d9d8d1;
+}
+
+.package-image {
+    position: relative;
+    display: grid;
+    height: 118px;
+    place-items: center;
+    color: #555c48;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+}
+
+.green-image {
+    background: #ccd7b9;
+}
+
+.yellow-image {
+    background: #decba5;
+}
+
+.package-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first-image img {
+    object-position: center 75%;
+}
+
+.fourth-image img {
+    object-position: center 25%;
+}
+
+.third-image img {
+    object-position: center 15%;
+}
+
+.package-details {
+    padding: 12px 15px;
+}
+
+.package-details h2 {
+    margin-bottom: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.price {
+    margin-bottom: 7px;
+    color: #747b58;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ul {
+    height: 58px;
+    margin: 0 0 9px;
+    padding: 0;
+    color: #77776d;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    line-height: 1.55;
+    list-style: none;
+}
+
+.green-button {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 0;
+    border-radius: 14px;
+    color: white;
+    background: #747b58;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.process-section {
+    background: #eee4d1;
+}
+
+.process-content {
+    width: 90%;
+    max-width: 1120px;
+    margin: auto;
+    padding: 30px 0 34px;
+}
+
+.process-heading h2 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.step-card {
+    min-height: 126px;
+    padding: 14px 15px;
+}
+
+.step-number {
+    display: block;
+    margin-bottom: 7px;
+    color: #747b58;
+    font-size: 16px;
+}
+
+.step-card h3,
+.commitment-card h3 {
+    margin-bottom: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.step-card p,
+.commitment-card p,
+.caption {
+    margin-bottom: 0;
+    color: #77776d;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.commitment-title {
+    margin: 27px 0 12px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.commitment-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.commitment-card {
+    min-height: 82px;
+    padding: 13px 15px;
+}
+
+.note {
+    margin: 15px 0 3px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+@media (max-width: 800px) {
+    .package-list,
+    .steps-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .packages-heading,
+    .process-heading {
+        display: block;
+    }
+
+    .outline-button {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .package-list,
+    .steps-list,
+    .commitment-list {
+        grid-template-columns: 1fr;
+    }
+}
