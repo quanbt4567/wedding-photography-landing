@@ -1055,3 +1055,18 @@ h2 em {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Visible keyboard focus for links and controls */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--olive);
+  outline-offset: 3px;
+}
+
+.footer-column span {
+  color: #f0eee7;
+  font-size: 11px;
+}
