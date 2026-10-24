@@ -882,12 +882,6 @@ h3 {
   outline: none;
 }
 
-.form-note {
-  color: var(--muted);
-  font-size: 8px;
-  line-height: 1.6;
-}
-
 .submit-button {
   width: 100%;
   padding: 9px 14px;
@@ -1616,10 +1610,6 @@ h3 {
     min-height: 55px;
   }
 
-  .form-note {
-    font-size: 7px;
-  }
-
   .footer {
     padding: 25px 6% 12px;
   }
@@ -2066,10 +2056,6 @@ h3 {
 
 .form-field textarea {
   min-height: 100px;
-}
-
-.form-note {
-  font-size: 10px;
 }
 
 .footer {
