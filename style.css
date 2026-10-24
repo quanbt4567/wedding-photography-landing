@@ -3405,3 +3405,40 @@ h3 {
     width: 100%;
   }
 }
+
+
+/* Đồng bộ logo footer với logo header */
+.footer-brand .logo {
+  display: inline-block;
+  color: var(--white);
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.footer-brand .logo-name {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.05;
+}
+
+.footer-brand .logo-subtitle {
+  margin-top: 4px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 6px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 560px) {
+  .footer-brand .logo-name {
+    font-size: 18px;
+  }
+
+  .footer-brand .logo-subtitle {
+    font-size: 6px;
+  }
+}
