@@ -9,8 +9,8 @@
   --ink: #2e2a25;
   --muted: #6e665a;
   --footer: #2e3826;
-  --heading-font: "Times New Roman", Georgia, serif;
-  --body-font: Arial, sans-serif;
+  --heading-font: "Cormorant Garamond", Georgia, serif;
+  --body-font: "Be Vietnam Pro", Arial, sans-serif;
   --content-width: 1200px;
 }
 * { box-sizing: border-box; }
